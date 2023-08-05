@@ -2,7 +2,25 @@
 using namespace std;
 int lcm_three (int a,int b,int c )
 {
-    
+    int lcm ,d;
+  if(a>b&&a>c)
+  {
+    d=a;
+  }
+    else if(b>c&&b>a){
+       d=b;
+         }
+         else
+         d=c;
+         for(lcm=d;lcm<=a*b*c;lcm++)
+         {
+            if(lcm%a==0&&lcm%b==0&&lcm%c==0)
+                 return lcm;
+            
+        
+         }
+        
+  
 }
 int main()
 {
